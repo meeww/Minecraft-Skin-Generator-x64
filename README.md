@@ -11,9 +11,9 @@ Create a directory to store the generator and enter that directory.
      pip3 install -r requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
 ## Training Data
-    download the minecraft skin image dataset, unzip its contents and rename the folder containing the skins to data
-    then upload the folder into the directory where you cloned the generator
-    https://www.reddit.com/r/datasets/comments/cmccb8/minecraft_skins_image_dataset/
+ download the minecraft skin image dataset, unzip its contents and rename the folder containing the skins to data
+ then upload the folder into the directory where you cloned the generator
+ https://www.reddit.com/r/datasets/comments/cmccb8/minecraft_skins_image_dataset/
     
 ## Generating skins
 Once the models have been trained they will be saved to `./discriminator.model` and `./generator.model` so they can be used to generate skins. You can run the same script to generate skins.
