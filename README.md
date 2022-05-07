@@ -17,7 +17,9 @@ Create a directory to store the generator and enter that directory.
     
 ## Training the model
 The model can continue training by using the command:
+
    $ python3 main.py --mode train --dataset data --epochs 5
+
 The models will be saved to `./discriminator.model` and `./generator.model'
    
 ## Generating new skins
