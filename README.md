@@ -15,10 +15,15 @@ Create a directory to store the generator and enter that directory.
  then upload the folder into the directory where you cloned the generator
  https://www.reddit.com/r/datasets/comments/cmccb8/minecraft_skins_image_dataset/
     
-## Generating skins
+## Training the model
+The model can continue training by using the command:
+   $ python3 main.py --mode train --dataset data --epochs 5
+The models will be saved to `./discriminator.model` and `./generator.model'
+   
+## Generating new skins
 Once the models have been trained they will be saved to `./discriminator.model` and `./generator.model` so they can be used to generate skins. You can run the same script to generate skins.
 
-    $ python3 main.py --mode generate --samples results --epochs 5
+    $ python3 main.py --mode generate --samples results
 
 Check for the generated skins at `./results/*.png`.
 
