@@ -18,14 +18,15 @@ Create a directory to store the generator and enter that directory.
 ## Training the model
 The model can continue training by using the command:
 
-   $ python3 main.py --mode train --dataset data --epochs 5
+    $ python3 main.py --mode train --dataset data --epochs 5
 
 The models will be saved to `./discriminator.model` and `./generator.model'
    
 ## Generating new skins
-Once the models have been trained they will be saved to `./discriminator.model` and `./generator.model` so they can be used to generate skins. You can run the same script to generate skins.
+You can generate new skins from the model by running generate.py. The output will be 4 skins with a padding of 2px. So if you want to seperate the textures also run crop.py
 
-    $ python3 main.py --mode generate --samples results
+    $ python3 generate.py
+    $ python3 crop.py
 
 Check for the generated skins at `./results/*.png`.
 
