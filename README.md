@@ -8,6 +8,7 @@ Create a directory to store the generator and enter that directory and download 
    
      cd path/to/directory
      git clone https://github.com/meeww/Minecraft-Skin-Generator-x64.git
+     cd Minecraft-Skin-Generator-x64
      pip3 install -r requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
 ## Training Data
@@ -25,7 +26,7 @@ The models will be saved to ./discriminator.model and ./generator.model
 ## Generating new skins
 You can generate new skins from the model by running generate.py. The output will be 4 skins with a padding of 2px. So if you want to seperate the textures also run crop.py
 
-    $ python3 generate.py
+    $ python3 generator.py
     $ python3 crop.py
 
 Check for the generated skins at `./results/*.png`.
